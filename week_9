@@ -1,0 +1,48 @@
+// 1st Pracice
+
+#include <stdio.h>
+
+int max(int x, int y) 
+{
+   if(x>y) 
+       return x;
+   else
+       return y;
+}
+int main (void)
+{
+ 
+   int x, y, larger;
+   printf ("Enter two integers: ");
+   scanf("%d %d", &x, &y);
+   larger = max (x, y);
+   printf("The larger value is %d . \n" , larger);
+   return 0;
+}
+
+
+
+// practice 2
+
+#include <stdio.h>
+
+int get_integer() 
+{
+    int value;
+    printf ("Enter an integer: ");
+    scanf("%d", &value);
+    return value;
+}
+int add(int x, int y)
+{
+    return x+y;
+}
+int main(void)
+{
+   int x = get_integer();
+   int y = get_integer();
+   
+   int sum = add(x,y);
+   printf ("The sum of two number is %d . \n", sum);
+   return 0;
+}
